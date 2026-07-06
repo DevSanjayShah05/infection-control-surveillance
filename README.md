@@ -46,10 +46,3 @@ Data files (`data/*.csv`, `*.parquet`, `*.duckdb`, `*.joblib`) are gitignored an
 ## Design system
 
 `common/theme.py` — a palette validated with a six-check color-accessibility validator (lightness band, chroma floor, CVD-safe separation, contrast vs. surface) rather than eyeballed colors, plus a consistent KPI card style and Plotly chart template. (This module is shared with the companion [Surgical Complications & Mortality Benchmarking](https://github.com/DevSanjayShah05/surgical-complications-benchmarking) project so the two dashboards read as one coherent design system.)
-
-## Resume bullet points
-
-- Built a 5-page infection-control surveillance platform on real CDC NHSN/CMS data (172K+ raw rows, 3,100+ facilities, 6 infection types), including a geographic choropleth benchmarking view and epidemiological funnel-plot control charts.
-- Implemented exact Poisson hypothesis testing with Benjamini-Hochberg FDR correction across ~11,300 simultaneous facility-measure tests, demonstrating the multiple-comparisons problem concretely (28% naive-significant vs. 58 true outliers after correction).
-- Trained and evaluated a real-data predictive model (logistic regression + gradient boosting, ROC-AUC 0.80) on genuine CMS hospital metadata to predict infection-benchmark outlier status, explicitly handling severe class imbalance (~1.7% positive rate) with PR-AUC and confusion-matrix reporting rather than misleading accuracy.
-- Designed a validated, accessibility-checked color system shared across both dashboards, and built a downloadable executive HTML report generated directly from the live analysis.
