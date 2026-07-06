@@ -1,0 +1,13 @@
+# Regeneratable data (raw downloads + derived artifacts) -- run
+# notebooks/00_download_data.py, 01_data_prep.py, 03_stats_and_features.py,
+# 04_predictive_model.py in order to reproduce everything below.
+data/*.csv
+data/*.duckdb
+data/*.parquet
+data/*.joblib
+
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.streamlit/secrets.toml

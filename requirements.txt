@@ -1,0 +1,14 @@
+duckdb==1.5.4
+joblib==1.5.3
+matplotlib==3.11.0
+numpy==2.4.6
+openpyxl==3.1.5
+pandas==3.0.3
+plotly==6.8.0
+pyarrow==24.0.0
+requests==2.34.2
+scikit-learn==1.9.0
+scipy==1.17.1
+seaborn==0.13.2
+statsmodels==0.14.6
+streamlit==1.58.0
